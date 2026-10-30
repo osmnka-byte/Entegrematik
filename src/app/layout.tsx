@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://entegrematik.com/og-image.jpg",
+        url: "https://raw.githubusercontent.com/osmnka-byte/Entegrematik/main/public/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Entegrematik Pazaryeri ve Ön Muhasebe Entegrasyonu",
@@ -60,7 +60,9 @@ export const metadata: Metadata = {
     title: "Entegrematik | Pazaryeri ve Ön Muhasebe Entegrasyonu",
     description:
       "Trendyol, Hepsiburada, N11, Çiçeksepeti ve e-ticaret sitelerinizi tek ekrandan yönetin. Otomatik stok, e-fatura ve kargo entegrasyonu. Hemen keşfedin!",
-    images: ["https://entegrematik.com/og-image.jpg"],
+    images: [
+      "https://raw.githubusercontent.com/osmnka-byte/Entegrematik/main/public/og-image.jpg",
+    ],
   },
 };
 
