@@ -96,6 +96,20 @@ export default function RootLayout({
   return (
     <html lang="tr" className="scroll-smooth">
       <head>
+        {/* Doğrudan Statik HTML Meta Etiketleri */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://entegrematik.com" />
+        <meta property="og:title" content="Entegrematik | Pazaryeri ve Ön Muhasebe Entegrasyonu" />
+        <meta property="og:description" content="Trendyol, Hepsiburada, N11, Çiçeksepeti ve e-ticaret sitelerinizi tek ekrandan yönetin. Otomatik stok, e-fatura ve kargo entegrasyonu. Hemen keşfedin!" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/osmnka-byte/Entegrematik/main/public/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Entegrematik | Pazaryeri ve Ön Muhasebe Entegrasyonu" />
+        <meta name="twitter:description" content="Trendyol, Hepsiburada, N11, Çiçeksepeti ve e-ticaret sitelerinizi tek ekrandan yönetin. Otomatik stok, e-fatura ve kargo entegrasyonu. Hemen keşfedin!" />
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/osmnka-byte/Entegrematik/main/public/og-image.jpg" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
