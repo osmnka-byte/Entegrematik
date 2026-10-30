@@ -31,76 +31,76 @@ export default function EntegrematikLandingPage() {
 
   // --- KAYAN BANT İÇİN ENTEGRASYON LOGOLARI / PLATFORMLAR ---
   const integrationLogos = [
-    { name: "Trendyol", color: "#F27A1A" },
-    { name: "Hepsiburada", color: "#FF6600" },
-    { name: "N11", color: "#E31E24" },
-    { name: "Pazarama", color: "#0055FF" },
-    { name: "Çiçeksepeti", color: "#00A0E6" },
-    { name: "PTTAVM", color: "#FFCC00" },
-    { name: "Koçtaş", color: "#EB2027" },
-    { name: "Turkcell Pasaj", color: "#FFC800" },
+    { name: "Trendyol Entegrasyonu", color: "#F27A1A" },
+    { name: "Hepsiburada Entegrasyonu", color: "#FF6600" },
+    { name: "N11 Entegrasyonu", color: "#E31E24" },
+    { name: "Pazarama Entegrasyonu", color: "#0055FF" },
+    { name: "Çiçeksepeti Entegrasyonu", color: "#00A0E6" },
+    { name: "PTTAVM Entegrasyonu", color: "#FFCC00" },
+    { name: "Koçtaş Entegrasyonu", color: "#EB2027" },
+    { name: "Turkcell Pasaj Entegrasyonu", color: "#FFC800" },
     { name: "Vodafone Yanımda", color: "#E60000" },
-    { name: "Teknosa", color: "#FF6600" },
-    { name: "Farmazon", color: "#00B0FF" },
-    { name: "Shopier", color: "#0088CC" },
-    { name: "idefix", color: "#0F172A" },
-    { name: "WooCommerce", color: "#96588A" },
+    { name: "Teknosa Entegrasyonu", color: "#FF6600" },
+    { name: "Farmazon Entegrasyonu", color: "#00B0FF" },
+    { name: "Shopier Entegrasyonu", color: "#0088CC" },
+    { name: "idefix Entegrasyonu", color: "#0F172A" },
+    { name: "WooCommerce Entegrasyonu", color: "#96588A" },
     { name: "PrestaShop", color: "#DF0067" },
     { name: "OpenCart", color: "#2292D0" },
     { name: "Aras Kargo", color: "#1D3C6A" },
     { name: "Yurtiçi Kargo", color: "#EE3124" },
     { name: "Geliver", color: "#2563EB" },
-    { name: "Sendeo", color: "#ED1C24" },
+    { name: "Sendeo Kargo", color: "#ED1C24" },
   ];
 
   // --- SEKMELİ KATEGORİZASYON İÇİN ENTEGRASYON LİSTELERİ ---
   const integrationCategories = {
     pazaryeri: [
-      { name: "Trendyol", desc: "Sipariş, Stok ve Fatura Senkronizasyonu", color: "#F27A1A" },
-      { name: "Hepsiburada", desc: "Anlık Ürün Listeleme & Komisyon Ayarları", color: "#FF6600" },
-      { name: "N11", desc: "Toplu Ürün Güncelleme & Fiyat Eşitleme", color: "#E31E24" },
-      { name: "Pazarama", desc: "Sipariş ve İade Otomasyonu", color: "#0055FF" },
-      { name: "Çiçeksepeti", desc: "Varyantlı Ürün Yönetimi & Stok Takibi", color: "#00A0E6" },
-      { name: "PTTAVM", desc: "Otomatik Barkod ve Sipariş Aktarımı", color: "#FFCC00" },
-      { name: "idefix", desc: "Kitap, Elektronik & Genel Ürün Yönetimi", color: "#0F172A" },
-      { name: "Koçtaş", desc: "Yapı Market & Ev Yaşam Entegrasyonu", color: "#EB2027" },
-      { name: "Turkcell Pasaj", desc: "Elektronik & Dijital Pazaryeri Otomasyonu", color: "#FFC800" },
-      { name: "Vodafone Yanımda", desc: "Mobil Pazaryeri Mağaza ve Sipariş Yönetimi", color: "#E60000" },
-      { name: "Teknosa", desc: "Teknoloji Pazaryeri Entegrasyonu & Stok Eşitleme", color: "#FF6600" },
-      { name: "Farmazon", desc: "Medikal & Eczane Pazaryeri Sipariş ve Stok Takibi", color: "#00B0FF" }
+      { name: "Trendyol Entegrasyonu", desc: "Sipariş, Stok ve Fatura Senkronizasyonu", color: "#F27A1A" },
+      { name: "Hepsiburada Entegrasyonu", desc: "Anlık Ürün Listeleme & Komisyon Ayarları", color: "#FF6600" },
+      { name: "N11 Entegrasyonu", desc: "Toplu Ürün Güncelleme & Fiyat Eşitleme", color: "#E31E24" },
+      { name: "Pazarama Entegrasyonu", desc: "Sipariş ve İade Otomasyonu", color: "#0055FF" },
+      { name: "Çiçeksepeti Entegrasyonu", desc: "Varyantlı Ürün Yönetimi & Stok Takibi", color: "#00A0E6" },
+      { name: "PTTAVM Entegrasyonu", desc: "Otomatik Barkod ve Sipariş Aktarımı", color: "#FFCC00" },
+      { name: "idefix Entegrasyonu", desc: "Kitap, Elektronik & Genel Ürün Yönetimi", color: "#0F172A" },
+      { name: "Koçtaş Entegrasyonu", desc: "Yapı Market & Ev Yaşam Entegrasyonu", color: "#EB2027" },
+      { name: "Turkcell Pasaj Entegrasyonu", desc: "Elektronik & Dijital Pazaryeri Otomasyonu", color: "#FFC800" },
+      { name: "Vodafone Yanımda Entegrasyonu", desc: "Mobil Pazaryeri Mağaza ve Sipariş Yönetimi", color: "#E60000" },
+      { name: "Teknosa Entegrasyonu", desc: "Teknoloji Pazaryeri Entegrasyonu & Stok Eşitleme", color: "#FF6600" },
+      { name: "Farmazon Entegrasyonu", desc: "Medikal & Eczane Pazaryeri Sipariş ve Stok Takibi", color: "#00B0FF" }
     ],
     eticaret: [
-      { name: "Shopier", desc: "Sosyal Medya & Butik E-Ticaret Entegrasyonu", color: "#0088CC" },
-      { name: "WooCommerce", desc: "WordPress Altyapılı Siteler İçin Çift Yönlü Aktarım", color: "#96588A" },
-      { name: "PrestaShop", desc: "Gelişmiş Mağaza Stok & Sipariş Senkronizasyonu", color: "#DF0067" },
-      { name: "OpenCart", desc: "Esnek XML ve Ürün Veritabanı Eşleşmesi", color: "#2292D0" },
-      { name: "Shopify", desc: "Uluslararası E-Ticaret Mağaza Senkronizasyonu", color: "#95BF47" },
-      { name: "Özel XML / API", desc: "Kendi Özel E-Ticaret Siteniz İçin Entegrasyon", color: "#2563EB" }
+      { name: "Shopier Entegrasyonu", desc: "Sosyal Medya & Butik E-Ticaret Entegrasyonu", color: "#0088CC" },
+      { name: "WooCommerce Entegrasyonu", desc: "WordPress Altyapılı Siteler İçin Çift Yönlü Aktarım", color: "#96588A" },
+      { name: "PrestaShop Entegrasyonu", desc: "Gelişmiş Mağaza Stok & Sipariş Senkronizasyonu", color: "#DF0067" },
+      { name: "OpenCart Entegrasyonu", desc: "Esnek XML ve Ürün Veritabanı Eşleşmesi", color: "#2292D0" },
+      { name: "Shopify Entegrasyonu", desc: "Uluslararası E-Ticaret Mağaza Senkronizasyonu", color: "#95BF47" },
+      { name: "Özel XML / API Entegrasyonu", desc: "Kendi Özel E-Ticaret Siteniz İçin Entegrasyon", color: "#2563EB" }
     ],
     kargo: [
-      { name: "Aras Kargo", desc: "Otomatik Barkod Basımı ve Kargo Fişi Hazırlama", color: "#1D3C6A" },
-      { name: "Yurtiçi Kargo", desc: "Anlık Kargo Takip Kodu ve Durum Güncellemesi", color: "#EE3124" },
-      { name: "MNG Kargo", desc: "Toplu Kargo Çıktısı Alma ve Fiyat Eşitleme", color: "#E31C2D" },
-      { name: "Sürat Kargo", desc: "Hızlı Barkod ve Şablon Düzenleyici", color: "#003399" },
-      { name: "PTT Kargo", desc: "Sistemle Tam Entegre Kargo Gönderi Takibi", color: "#FFCC00" },
-      { name: "Geliver", desc: "Akıllı Kargo ve Lojistik Yönetim Entegrasyonu", color: "#2563EB" },
-      { name: "Sendeo", desc: "Yeni Nesil Teslimat & Kargo Takip Otomasyonu", color: "#ED1C24" }
+      { name: "Aras Kargo Entegrasyonu", desc: "Otomatik Barkod Basımı ve Kargo Fişi Hazırlama", color: "#1D3C6A" },
+      { name: "Yurtiçi Kargo Entegrasyonu", desc: "Anlık Kargo Takip Kodu ve Durum Güncellemesi", color: "#EE3124" },
+      { name: "MNG Kargo Entegrasyonu", desc: "Toplu Kargo Çıktısı Alma ve Fiyat Eşitleme", color: "#E31C2D" },
+      { name: "Sürat Kargo Entegrasyonu", desc: "Hızlı Barkod ve Şablon Düzenleyici", color: "#003399" },
+      { name: "PTT Kargo Entegrasyonu", desc: "Sistemle Tam Entegre Kargo Gönderi Takibi", color: "#FFCC00" },
+      { name: "Geliver Kargo Entegrasyonu", desc: "Akıllı Kargo ve Lojistik Yönetim Entegrasyonu", color: "#2563EB" },
+      { name: "Sendeo Kargo Entegrasyonu", desc: "Yeni Nesil Teslimat & Kargo Takip Otomasyonu", color: "#ED1C24" }
     ],
     efatura: [
       { name: "GİB E-Fatura / E-Arşiv", desc: "Resmi Gelir İdaresi Başkanlığı Tam Uyumlu", color: "#10B981" },
-      { name: "Uyumsoft", desc: "Otomatik E-Fatura Kesimi ve Pazaryerine Yükleme", color: "#0052CC" },
-      { name: "Birfatura", desc: "Hızlı Ön Muhasebe ve Fatura Entegrasyonu", color: "#3B82F6" },
-      { name: "QNB eFinans", desc: "Güvenli Kurumsal E-Fatura ve E-Arşiv Altyapısı", color: "#8A1538" },
+      { name: "Uyumsoft E-Fatura Entegrasyonu", desc: "Otomatik E-Fatura Kesimi ve Pazaryerine Yükleme", color: "#0052CC" },
+      { name: "Birfatura Entegrasyonu", desc: "Hızlı Ön Muhasebe ve Fatura Entegrasyonu", color: "#3B82F6" },
+      { name: "QNB eFinans Entegrasyonu", desc: "Güvenli Kurumsal E-Fatura ve E-Arşiv Altyapısı", color: "#8A1538" },
       { name: "Hepsiburada E-Faturam", desc: "Hepsiburada Siparişlerine Özel Otomatik Fatura", color: "#FF6600" },
-      { name: "EDM Bilişim", desc: "Entegre E-Dönüşüm ve Fatura Otomasyonu", color: "#1D3C6A" },
-      { name: "N11 Faturam", desc: "N11 Mağazanıza Özel Otomatik Fatura Yükleme", color: "#E31E24" },
+      { name: "EDM Bilişim Entegrasyonu", desc: "Entegre E-Dönüşüm ve Fatura Otomasyonu", color: "#1D3C6A" },
+      { name: "N11 Faturam Entegrasyonu", desc: "N11 Mağazanıza Özel Otomatik Fatura Yükleme", color: "#E31E24" },
       { name: "Trendyol E-Faturam", desc: "Trendyol Mağazanız İçin Anında Fatura Kesimi", color: "#F27A1A" }
     ],
     sms: [
-      { name: "Netgsm", desc: "Müşterilerinize Otomatik Sipariş & Kargo Bilgilendirme SMS'i", color: "#3B82F6" },
-      { name: "Whapi", desc: "WhatsApp API İle Otomatik Mesajlaşma & Bildirim", color: "#25D366" },
-      { name: "WhatsApp", desc: "Müşterilerinize Anlık WhatsApp Bildirimi ve Takip", color: "#128C7E" },
-      { name: "İletimerkezi", desc: "Toplu Müşteri Bilgilendirme Mesajları", color: "#F59E0B" }
+      { name: "Netgsm SMS Entegrasyonu", desc: "Müşterilerinize Otomatik Sipariş & Kargo Bilgilendirme SMS'i", color: "#3B82F6" },
+      { name: "Whapi WhatsApp Entegrasyonu", desc: "WhatsApp API İle Otomatik Mesajlaşma & Bildirim", color: "#25D366" },
+      { name: "WhatsApp Bildirim Entegrasyonu", desc: "Müşterilerinize Anlık WhatsApp Bildirimi ve Takip", color: "#128C7E" },
+      { name: "İletimerkezi SMS Entegrasyonu", desc: "Toplu Müşteri Bilgilendirme Mesajları", color: "#F59E0B" }
     ]
   };
 
@@ -148,7 +148,7 @@ export default function EntegrematikLandingPage() {
   const pricingPlans = [
     {
       name: "GirişMatik",
-      badge: "Başlangıç",
+      badge: "Başlangıç Paketi",
       monthlyPrice: 899,
       yearlyMonthlyEquivalent: 749,
       yearlyTotal: 8988,
@@ -188,7 +188,7 @@ export default function EntegrematikLandingPage() {
     },
     {
       name: "SenkronMatik",
-      badge: "Çok Satan",
+      badge: "Çok Satan Paket",
       monthlyPrice: 1099,
       yearlyMonthlyEquivalent: 899,
       yearlyTotal: 10788,
@@ -323,9 +323,58 @@ export default function EntegrematikLandingPage() {
     }
   ];
 
+  // --- SCHEMA.ORG (JSON-LD) YAPISAL VERİLERİ ---
+  const jsonLdData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Entegrematik",
+        "operatingSystem": "All",
+        "applicationCategory": "BusinessApplication",
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "TRY",
+          "lowPrice": "749",
+          "highPrice": "2099",
+          "offerCount": "4"
+        },
+        "description": "Pazaryeri entegrasyonu, e-fatura ve stok takip yazılımı."
+      },
+      {
+        "@type": "Organization",
+        "name": "Entegrematik Bilişim Teknolojileri",
+        "url": "https://entegrematik.com",
+        "logo": "https://entegrematik.com/og-image.jpg",
+        "sameAs": [
+          "https://x.com/entegrematik",
+          "https://www.instagram.com/entegrematik/",
+          "https://www.linkedin.com/company/entegrematik"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-[#0B0F17] text-[#F9FAFB] font-sans overflow-x-hidden selection:bg-[#2563EB] selection:text-white">
       
+      {/* Schema.org Entegrasyonu */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+      />
+
       <style jsx global>{`
         html {
           scroll-behavior: smooth;
@@ -522,7 +571,7 @@ export default function EntegrematikLandingPage() {
                 <div 
                   key={idx}
                   className="flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-white/20 transition-all duration-300 flex-shrink-0 cursor-default group"
-                  title={`${logo.name} Entegrasyonu`}
+                  title={`${logo.name}`}
                 >
                   <div 
                     className="w-3 h-3 rounded-full transition-transform group-hover:scale-125" 
@@ -583,9 +632,9 @@ export default function EntegrematikLandingPage() {
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#2563EB]/20 to-[#10B981]/10 border border-[#2563EB]/20 flex items-center justify-center text-[#3B82F6] group-hover:scale-110 group-hover:text-[#10B981] transition-all duration-300 mb-4">
                       <IconComp size={22} />
                     </div>
-                    <h3 className="text-base font-bold text-white mb-2 tracking-wide uppercase">
+                    <span className="text-base font-bold text-white mb-2 tracking-wide uppercase block">
                       {feat.title}
-                    </h3>
+                    </span>
                     <p className="text-xs text-[#9CA3AF] leading-relaxed">
                       {feat.desc}
                     </p>
@@ -907,7 +956,7 @@ export default function EntegrematikLandingPage() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm tracking-wider uppercase">Ürün & Çözümler</h4>
+            <span className="text-white font-semibold mb-4 text-sm tracking-wider uppercase block">Ürün & Çözümler</span>
             <ul className="space-y-2 text-sm">
               <li>
                 <a 
@@ -943,7 +992,7 @@ export default function EntegrematikLandingPage() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm tracking-wider uppercase">Blog & Rehber</h4>
+            <span className="text-white font-semibold mb-4 text-sm tracking-wider uppercase block">Blog & Rehber</span>
             <ul className="space-y-2 text-sm">
               <li>
                 <a 
@@ -986,7 +1035,7 @@ export default function EntegrematikLandingPage() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm tracking-wider uppercase">Yasal & Destek</h4>
+            <span className="text-white font-semibold mb-4 text-sm tracking-wider uppercase block">Yasal & Destek</span>
             <ul className="space-y-2 text-sm">
               <li>
                 <a 
