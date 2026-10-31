@@ -144,14 +144,14 @@ export default function EntegrematikLandingPage() {
     ? allFeatures 
     : allFeatures.filter(f => f.category === activeFeatureTab);
 
-  // --- PAKET VERİLERİ ---
+  // --- PAKET VERİLERİ (GÜNCELLENMİŞ MARJ KORUMALI FİYATLAR) ---
   const pricingPlans = [
     {
       name: "GirişMatik",
       badge: "Başlangıç Paketi",
-      monthlyPrice: 899,
-      yearlyMonthlyEquivalent: 749,
-      yearlyTotal: 8988,
+      monthlyPrice: 1099,
+      yearlyMonthlyEquivalent: 879,
+      yearlyTotal: 10548,
       isPopular: false,
       features: [
         { text: "Bütün Pazaryeri Entegrasyonları", included: true },
@@ -189,9 +189,9 @@ export default function EntegrematikLandingPage() {
     {
       name: "SenkronMatik",
       badge: "Çok Satan Paket",
-      monthlyPrice: 1099,
-      yearlyMonthlyEquivalent: 899,
-      yearlyTotal: 10788,
+      monthlyPrice: 1349,
+      yearlyMonthlyEquivalent: 1079,
+      yearlyTotal: 12948,
       isPopular: true,
       features: [
         { text: "Bütün Pazaryeri Entegrasyonları", included: true },
@@ -229,9 +229,9 @@ export default function EntegrematikLandingPage() {
     {
       name: "OtomaMatik",
       badge: "Büyüyen İşletmeler",
-      monthlyPrice: 1599,
-      yearlyMonthlyEquivalent: 1299,
-      yearlyTotal: 15588,
+      monthlyPrice: 1949,
+      yearlyMonthlyEquivalent: 1559,
+      yearlyTotal: 18708,
       isPopular: false,
       features: [
         { text: "Bütün Pazaryeri Entegrasyonları", included: true },
@@ -269,9 +269,9 @@ export default function EntegrematikLandingPage() {
     {
       name: "EntegreMatik Pro",
       badge: "Maksimum Güç",
-      monthlyPrice: 2099,
-      yearlyMonthlyEquivalent: 1699,
-      yearlyTotal: 20388,
+      monthlyPrice: 2599,
+      yearlyMonthlyEquivalent: 2079,
+      yearlyTotal: 24948,
       isPopular: false,
       features: [
         { text: "Bütün Pazaryeri Entegrasyonları", included: true },
@@ -335,8 +335,8 @@ export default function EntegrematikLandingPage() {
         "offers": {
           "@type": "AggregateOffer",
           "priceCurrency": "TRY",
-          "lowPrice": "749",
-          "highPrice": "2099",
+          "lowPrice": "879",
+          "highPrice": "2599",
           "offerCount": "4"
         },
         "description": "Pazaryeri entegrasyonu, e-fatura ve stok takip yazılımı."
