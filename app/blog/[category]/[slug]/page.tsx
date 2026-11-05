@@ -31,16 +31,24 @@ export async function generateMetadata({
   const { category, slug } = await params;
   const post = POSTS.find((p) => p.slug === slug && p.categorySlug === category);
   if (!post) return {};
+
+  const imageUrl = post.coverImage.startsWith("http")
+    ? post.coverImage
+    : `https://entegrematik.com${post.coverImage.startsWith("/") ? "" : "/"}${post.coverImage}`;
+
   return {
     title: post.title,
     description: post.description,
+    alternates: {
+      canonical: `/blog/${post.categorySlug}/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,
       type: "article",
       locale: "tr_TR",
       url: `https://entegrematik.com/blog/${post.categorySlug}/${post.slug}`,
-      images: [{ url: post.coverImage, width: 1600, height: 900, alt: post.coverImageAlt }],
+      images: [{ url: imageUrl, width: 1600, height: 900, alt: post.coverImageAlt }],
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
     },
@@ -92,33 +100,75 @@ export default async function PostPage({
     (p) => p.categorySlug === post.categorySlug && p.slug !== post.slug
   ).slice(0, 3);
 
+  const imageUrl = post.coverImage.startsWith("http")
+    ? post.coverImage
+    : `https://entegrematik.com${post.coverImage.startsWith("/") ? "" : "/"}${post.coverImage}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://entegrematik.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://entegrematik.com/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": category_.name,
+            "item": `https://entegrematik.com/blog/${category_.slug}`
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": post.title,
+            "item": `https://entegrematik.com/blog/${post.categorySlug}/${post.slug}`
+          }
+        ]
+      },
+      {
         "@type": "BlogPosting",
         headline: post.title,
         description: post.description,
-        image: post.coverImage,
+        image: imageUrl,
         datePublished: post.publishedAt,
         dateModified: post.updatedAt,
-        author: { "@type": "Person", name: author.name, jobTitle: author.title },
+        author: {
+          "@type": "Person",
+          name: author.name,
+          jobTitle: author.title,
+          url: author.social.linkedin || undefined,
+        },
         publisher: {
           "@type": "Organization",
-          name: "Entegrematik",
+          name: "Entegrematik Bilişim Teknolojileri",
           url: "https://entegrematik.com",
         },
         mainEntityOfPage: `https://entegrematik.com/blog/${post.categorySlug}/${post.slug}`,
         keywords: post.tags.join(", "),
       },
-      {
-        "@type": "FAQPage",
-        mainEntity: post.faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: { "@type": "Answer", text: faq.answer },
-        })),
-      },
+      ...(post.faqs.length > 0
+        ? [
+            {
+              "@type": "FAQPage",
+              mainEntity: post.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: { "@type": "Answer", text: faq.answer },
+              })),
+            },
+          ]
+        : []),
     ],
   };
 
@@ -268,10 +318,10 @@ export default async function PostPage({
           <p className="text-silver max-w-lg mx-auto mb-6">
             Rehberde anlattığımız tüm operasyonları Entegrematik ile tek panelden yönetin.
           </p>
-          <a href="/#fiyatlandirma" className="btn-primary">
+          <Link href="/#fiyatlandirma" className="btn-primary">
             14 Gün Ücretsiz Deneyin
             <ArrowRight size={18} aria-hidden="true" />
-          </a>
+          </Link>
         </div>
       </article>
 

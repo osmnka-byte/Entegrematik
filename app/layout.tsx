@@ -22,7 +22,9 @@ export const metadata: Metadata = {
     "stok yönetimi",
     "ön muhasebe",
   ],
-  authors: [{ name: "Entegrematik Bilişim Teknolojileri", url: "https://entegrematik.com" }],
+  authors: [
+    { name: "Entegrematik Bilişim Teknolojileri", url: "https://entegrematik.com" },
+  ],
   publisher: "Entegrematik Bilişim Teknolojileri",
   creator: "Entegrematik Bilişim Teknolojileri",
   robots: {
@@ -36,9 +38,13 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: "./",
+  },
   openGraph: {
     title: "Entegrematik | Pazaryeri ve Ön Muhasebe Entegrasyonu",
-    description: "Tüm pazaryerleri, e-fatura, kargo ve stok yönetimi tek ekranda.",
+    description:
+      "Tüm pazaryerleri, e-fatura, kargo ve stok yönetimi tek ekranda.",
     type: "website",
     locale: "tr_TR",
     siteName: "Entegrematik",
@@ -55,15 +61,22 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Entegrematik | Pazaryeri ve Ön Muhasebe Entegrasyonu",
-    description: "Tüm pazaryerleri, e-fatura, kargo ve stok yönetimi tek ekranda.",
+    description:
+      "Tüm pazaryerleri, e-fatura, kargo ve stok yönetimi tek ekranda.",
     images: ["/og/default.png"],
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="tr" className="dark">
-      <body className={`${geist.variable} font-sans min-h-screen flex flex-col`}>
+      <body
+        className={`${geist.variable} font-sans min-h-screen flex flex-col`}
+      >
         <Header />
         <main className="flex-1 pt-20">{children}</main>
         <Footer />
