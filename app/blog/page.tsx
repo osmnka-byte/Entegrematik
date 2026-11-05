@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Blog | E-Ticaret Operasyon Rehberi",
   description:
     "Pazaryeri entegrasyonları, e-fatura, ön muhasebe ve e-ticaret SEO rehberleri. Trendyol, Hepsiburada ve N11 satışlarınızı büyütecek uzman içerikler.",
+  alternates: { canonical: "/blog" },
   openGraph: {
     title: "Entegrematik Blog | E-Ticaret Operasyon Rehberi",
     description:

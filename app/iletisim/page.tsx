@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "İletişim | Demo Talebi & Destek",
   description:
     "Entegrematik ekibiyle iletişime geçin: demo talebi, paket bilgisi ve teknik sorularınız için formu doldurun, aynı iş günü içinde dönüş yapalım.",
+  alternates: { canonical: "/iletisim" },
   openGraph: {
     title: "İletişim | Entegrematik",
     description: "Demo talebi, paket bilgisi ve teknik sorularınız için bize yazın.",

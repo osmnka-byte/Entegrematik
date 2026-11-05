@@ -22,10 +22,23 @@ export const metadata: Metadata = {
     "stok yönetimi",
     "ön muhasebe",
   ],
+  authors: [{ name: "Entegrematik Bilişim Teknolojileri", url: "https://entegrematik.com" }],
+  publisher: "Entegrematik Bilişim Teknolojileri",
+  creator: "Entegrematik Bilişim Teknolojileri",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Entegrematik | Pazaryeri ve Ön Muhasebe Entegrasyonu",
-    description:
-      "Tüm pazaryerleri, e-fatura, kargo ve stok yönetimi tek ekranda.",
+    description: "Tüm pazaryerleri, e-fatura, kargo ve stok yönetimi tek ekranda.",
     type: "website",
     locale: "tr_TR",
     siteName: "Entegrematik",
@@ -42,8 +55,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Entegrematik | Pazaryeri ve Ön Muhasebe Entegrasyonu",
-    description:
-      "Tüm pazaryerleri, e-fatura, kargo ve stok yönetimi tek ekranda.",
+    description: "Tüm pazaryerleri, e-fatura, kargo ve stok yönetimi tek ekranda.",
     images: ["/og/default.png"],
   },
 };
