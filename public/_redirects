@@ -1,0 +1,12 @@
+# 1. Eski blog subdomain'i ana siteye yönlendir (Cloudflare Pages host koşulu)
+/* https://entegrematik.com/blog/:splat 301 host=blog.entegrematik.com
+
+# 2. Trailing slash (sondaki eğik çizgi) temizliği
+/blog/:category/:slug/ /blog/:category/:slug 301
+/blog/:category/ /blog/:category 301
+
+# 3. Eski derin linkler için ilgili sayfalara yönlendirme
+# Not: Sunucu tarafı 301 yönlendirmelerinde # (hash) kullanılamaz. 
+# Bu nedenle ana sayfaya (/) veya güncel hedef sayfaya (/iletisim) yönlendiriyoruz.
+/ozellikler/* / 301
+/ucretsiz-dene /iletisim 301
