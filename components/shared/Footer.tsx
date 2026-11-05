@@ -39,7 +39,7 @@ const productLinks = [
   { name: "İletişim", href: "/iletisim", external: false },
 ];
 
-// ✅ BLOG LİNKLERİ: Artık internal (iç) link olarak ayarlandı.
+// ✅ GÜNCELLENDİ: Eski blog.entegrematik.com linkleri yerine internal /blog/* yapısı
 const blogLinks = [
   { name: "E-Ticaret Blogu", href: "/blog", external: false },
   { name: "Pazaryeri Rehberi", href: "/blog/pazaryeri-entegrasyonlari", external: false },
